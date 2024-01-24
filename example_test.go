@@ -3,8 +3,9 @@ package graylog_test
 import (
 	"time"
 
-	"github.com/mdigger/graylog"
-	"golang.org/x/exp/slog"
+	"log/slog"
+
+	"github.com/slukits/graylog"
 )
 
 func Example() {

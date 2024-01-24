@@ -50,8 +50,9 @@ func (b *buffer) WriteQuoted(s string) {
 	*b = strconv.AppendQuote(*b, s)
 }
 
-func (b *buffer) WriteByte(c byte) {
+func (b *buffer) WriteByte(c byte) error {
 	*b = append(*b, c)
+	return nil
 }
 
 func (b *buffer) WriteBool(v bool) {

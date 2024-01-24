@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"golang.org/x/exp/slog"
+	"log/slog"
 )
 
 type handler struct {
@@ -72,8 +72,9 @@ func (h handler) Handle(_ context.Context, r slog.Record) error {
 	}
 
 	// add record attributes
-	r.Attrs(func(attr slog.Attr) {
+	r.Attrs(func(attr slog.Attr) bool {
 		writeAttr(buf, attr, h.group)
+		return false
 	})
 
 	buf.WriteByte('}') // the end

@@ -1,7 +1,7 @@
 package graylog
 
 import (
-	"golang.org/x/exp/slog"
+	"log/slog"
 )
 
 // priority is a Graylog level.

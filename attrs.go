@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/exp/slog"
+	"log/slog"
 )
 
 func writeAttr(w *buffer, attr slog.Attr, prefix string) {

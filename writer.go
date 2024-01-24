@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"golang.org/x/exp/slog"
+	"log/slog"
 )
 
 // Logger is an io.Logger for sending log messages to the Graylog server.

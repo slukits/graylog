@@ -1,5 +1,3 @@
-module github.com/mdigger/graylog
+module github.com/slukits/graylog
 
-go 1.19
-
-require golang.org/x/exp v0.0.0-20230321023759-10a507213a29
+go 1.21.4
